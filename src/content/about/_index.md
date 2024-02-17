@@ -1,9 +1,13 @@
 ---
-title: "Hey, I am John Doe!"
+title: "¡Hola, Soy Daisy Garzón León!"
 meta_title: "About"
-description: "this is meta description"
+description: "Sobre mi trayectoria profesional"
 image: "/images/avatar.png"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+Soy **Desarrolladora Web Fullstack** con énfasis en **Front-end** y profesional en **Diseño Grafico.** Cuento con experiencia en QA y a lo largo de mi carrera, trabajé en proyectos que han constituido aptitudes en React, Typescript, Javascript, Java, SQL y Git.
+
+También tengo experiencia en diseño, animación y edición de material multimedia, comunicación audiovisual, marca y desarrollo de branding, retoque digital de alto nivel, producción fotográfica, campañas, e-mail marketing, landing pages, piezas para redes sociales y diseño UI/UX.
+
+Tengo **habilidades** en planeación, innovación, creatividad, negociación, trabajo en equipo, orientación a resultados , resolución de problemas y gestión Ágil de proyectos con SCRUM.
