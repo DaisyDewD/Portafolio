@@ -7,6 +7,7 @@ import menu from "@/config/menu.json";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
+import { IoSearch } from "react-icons/io5/index.js";
 
 //  child navigation link interface
 export interface IChildNavigationLink {
@@ -54,7 +55,7 @@ const Header = () => {
             className="h-6 fill-current block"
             viewBox="0 0 20 20"
           >
-            <title>Abrir menú</title>
+            <title>Menu Open</title>
             <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
           </svg>
           <svg
@@ -62,7 +63,7 @@ const Header = () => {
             className="h-6 fill-current hidden"
             viewBox="0 0 20 20"
           >
-            <title>Cerrar menú</title>
+            <title>Menu Close</title>
             <polygon
               points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
               transform="rotate(45 10 10)"
@@ -144,6 +145,7 @@ const Header = () => {
               aria-label="search"
               data-search-trigger
             >
+              <IoSearch />
             </button>
           )}
           <ThemeSwitcher className="mr-5" />

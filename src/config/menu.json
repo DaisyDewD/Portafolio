@@ -28,6 +28,10 @@
     {
       "name": "Contacto",
       "url": "/contact"
+    },
+    {
+      "name": "Descargar CV",
+      "url": "/files/CV-DeisyGarzon2024.pdf"
     }
   ]
 }
