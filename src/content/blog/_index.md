@@ -1,5 +1,5 @@
 ---
-title: "Blog Posts"
-meta_title: ""
-description: "this is meta description"
+title: "Proyectos"
+meta_title: "proyectos"
+description: "Proyectos realizados" 
 ---

@@ -43,7 +43,6 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
     meta_title,
     description,
     image,
-    author,
     categories,
     date,
     tags,
@@ -78,12 +77,6 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
                 className="h2 mb-4"
               />
               <ul className="mb-4">
-                <li className="mr-4 inline-block">
-                  <Link href={`/authors/${slugify(author)}`}>
-                    <FaRegUserCircle className={"-mt-1 mr-2 inline-block"} />
-                    {humanize(author)}
-                  </Link>
-                </li>
                 <li className="mr-4 inline-block">
                   <FaRegFolder className={"-mt-1 mr-2 inline-block"} />
                   {categories?.map((category: string, index: number) => (

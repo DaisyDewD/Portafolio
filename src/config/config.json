@@ -1,15 +1,15 @@
 {
   "site": {
-    "title": "Nextplate",
-    "base_url": "https://nextplate.netlify.app",
+    "title": "Portfolio",
+    "base_url": "https://portfolio-daisydew.vercel.app",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
     "logo_darkmode": "/images/logo-darkmode.png",
-    "logo_width": "150",
-    "logo_height": "27",
-    "logo_text": "Nextplate"
+    "logo_width": "300",
+    "logo_height": "",
+    "logo_text": "Portfolio-DaisyDew"
   },
 
   "settings": {
@@ -24,24 +24,19 @@
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Designed And Developed by [Zeon Studio](https://zeon.studio)"
+    "copyright": "Designed And Developed by DaisyDew"
   },
 
   "navigation_button": {
     "enable": true,
-    "label": "Get Started",
-    "link": "https://github.com/zeon-studio/nextplate"
+    "label": "Descargar CV",
+    "link": "/files/CV-DeisyGarzon2024.pdf"
   },
 
-  "disqus": {
-    "enable": true,
-    "shortname": "themefisher-template",
-    "settings": {}
-  },
 
   "metadata": {
-    "meta_author": "Themefisher",
-    "meta_image": "/images/og-image.png",
-    "meta_description": "Next Boilerplate"
+    "meta_author": "DaisyDew",
+    "meta_image": "/images/logo.png",
+    "meta_description": "Portafolio de DaisyDew"
   }
 }
