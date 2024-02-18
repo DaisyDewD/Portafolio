@@ -38,5 +38,11 @@
     "meta_author": "DaisyDew",
     "meta_image": "/images/logo.png",
     "meta_description": "Portafolio de DaisyDew"
+  }, 
+
+  "sendGrid":
+  {
+    "sendGridApiKey": "TU_API_KEY_DE_SENDGRID",
+    "sendGridSenderEmail": "d.dew.design@gmail.com"
   }
 }
