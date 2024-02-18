@@ -14,7 +14,7 @@ const PostSidebar = ({
     <div className="lg:col-4">
       {/* <!-- categories --> */}
       <div className="mb-8">
-        <h5 className="mb-6">Categories</h5>
+        <h5 className="mb-6">Categorias</h5>
         <div className="rounded bg-theme-light p-8 dark:bg-darkmode-theme-light">
           <ul className="space-y-4">
             {categories.map((category: string) => {
@@ -37,7 +37,7 @@ const PostSidebar = ({
       </div>
       {/* <!-- tags --> */}
       <div className="mb-8">
-        <h5 className="mb-6">Tags</h5>
+        <h5 className="mb-6">Habilidades</h5>
         <div className="rounded bg-theme-light p-6 dark:bg-darkmode-theme-light">
           <ul>
             {tags.map((tag: string) => {

@@ -7,7 +7,7 @@
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
     "logo_darkmode": "/images/logo-darkmode.png",
-    "logo_width": "300",
+    "logo_width": "250",
     "logo_height": "",
     "logo_text": "Portfolio-DaisyDew"
   },
@@ -30,7 +30,7 @@
   "navigation_button": {
     "enable": true,
     "label": "Descargar CV",
-    "link": "/files/CV-DeisyGarzon2024.pdf"
+    "link": "/docs/CV-DeisyGarzon2024.pdf"
   },
 
 

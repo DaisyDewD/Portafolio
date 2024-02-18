@@ -3,6 +3,7 @@ import { getListPage } from "@/lib/contentParser";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
 import { RegularPage } from "@/types";
+import Share from "@/components/Share";
 
 const Contact = async () => {
   const data: RegularPage = getListPage("contact/_index.md");
@@ -19,6 +20,11 @@ const Contact = async () => {
         image={image}
       />
       <PageHeader title={title} />
+      <div className="flex items-center justify-center mt-10">
+                  <Share
+          className="social-icons"
+                   />
+                </div>
       <section className="section-sm">
         <div className="container">
           <div className="row">
