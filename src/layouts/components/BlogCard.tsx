@@ -12,13 +12,15 @@ const BlogCard = ({ data }: { data: Post }) => {
   return (
     <div className="bg-body dark:bg-darkmode-body">
       {image && (
-        <ImageFallback
-          className="mb-6 w-full rounded"
-          src={image}
-          alt={title}
-          width={445}
-          height={230}
-        />
+        <Link href={`/${blog_folder}/${data.slug}`}>
+          <ImageFallback
+            className="mb-6 w-full rounded cursor-pointer"
+            src={image}
+            alt={title}
+            width={445}
+            height={230}
+          />
+      </Link>
       )}
       <h4 className="mb-3">
         <Link href={`/${blog_folder}/${data.slug}`}>{title}</Link>
