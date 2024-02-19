@@ -1,8 +1,8 @@
 {
-  "name": "nextplate",
+  "name": "portfolio",
   "version": "2.1.0",
-  "description": "Nextjs and Tailwindcss boilerplate",
-  "author": "zeon.studio",
+  "description": "Nextjs and Tailwindcss portfolio",
+  "author": "daisydew",
   "license": "MIT",
   "packageManager": "yarn@1.22.19",
   "scripts": {

@@ -35,7 +35,7 @@ npm run build
 ### 👉 Build and Run With Docker
 
 ```bash
-docker build -t nextplate .
-docker run -p 3000:3000 nextplate
+docker build -t portfolio .
+docker run -p 3000:3000 portfolio
 ```
 

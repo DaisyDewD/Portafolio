@@ -15,7 +15,7 @@ const Share = ({
     <ul className={className}>
       <li className="inline-block">
         <a
-          aria-label="e-mail share button"
+          aria-label="e-mail button"
           href={`mailto:d.dew.design@gmail.com`}
           target="_blank"
           rel="noreferrer noopener"
@@ -25,7 +25,7 @@ const Share = ({
       </li>
       <li className="inline-block">
         <a
-          aria-label="github share button"
+          aria-label="github button"
           href={`https://www.github.com/DaisyDewD`}
           target="_blank"
           rel="noreferrer noopener"
@@ -35,7 +35,7 @@ const Share = ({
       </li>
       <li className="inline-block">
         <a
-          aria-label="linkedin share button"
+          aria-label="linkedin button"
           href={`https://www.linkedin.com/in/daisydew/`}
           target="_blank"
           rel="noreferrer noopener"
@@ -45,7 +45,7 @@ const Share = ({
       </li>
       <li className="inline-block">
         <a
-          aria-label="instagram share button"
+          aria-label="instagram button"
           href={`https://www.instagram.com/daisy.dew.art/`}
           target="_blank"
           rel="noreferrer noopener"
