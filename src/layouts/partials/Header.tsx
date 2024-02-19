@@ -26,7 +26,7 @@ export interface INavigationLink {
 const Header = () => {
   // distructuring the main menu from menu object
   const { main }: { main: INavigationLink[] } = menu;
-  const { navigation_button, settings } = config;
+  const { navigation_button, navigation_button2, settings } = config;
   // get current path
   const pathname = usePathname();
 
@@ -137,6 +137,16 @@ const Header = () => {
               </Link>
             </li>
           )}
+          {navigation_button2.enable && (
+            <li className="mt-4 inline-block lg:hidden">
+              <Link
+                className="btn btn-outline-primary btn-sm"
+                href={navigation_button2.link}
+              >
+                {navigation_button2.label}
+              </Link>
+            </li>
+          )}
         </ul>
         <div className="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
           {settings.search && (
@@ -151,10 +161,18 @@ const Header = () => {
           <ThemeSwitcher className="mr-5" />
           {navigation_button.enable && (
             <Link
-              className="btn btn-outline-primary btn-sm hidden lg:inline-block"
+              className="btn btn-outline-primary btn-sm hidden lg:inline-block mr-2"
               href={navigation_button.link}
             >
               {navigation_button.label}
+            </Link>
+          )}
+          {navigation_button2.enable && (
+            <Link
+              className="btn btn-outline-primary btn-sm hidden lg:inline-block"
+              href={navigation_button2.link}
+            >
+              {navigation_button2.label}
             </Link>
           )}
         </div>
