@@ -5,13 +5,13 @@ description: "Restaurante de comida francesa"
 date: 2023-10-02T05:00:00Z
 image: "/images/enchante.png"
 categories: ["Application", "Data", "App", "Data", "Infraestructura", "Site", "Web Design"]
-tags: ["nextjs", "tailwind"]
+tags: ["nextjs", "tailwind", "Spring-Boot", "MySQL", "Java"]
 draft: false
 ---
 
-Enchanté es una web page de un restaurante francés con sistema de gestión de reservas. En donde un usuario puede registrarse y hacer una reserva en el restaurante. 
+Enchanté es una página web de un restaurante francés, que ofrece platos exquisitos, postres y bebidas, con un estilo sofisticado y elegante.
 
-El administrador puede gestionar las reservas y los usuarios registrados. Así mismo el usuario puede ver su perfil y editar sus datos, como también gestionar sus reservas y eliminarlas.
+Este restaurante cuenta con sistema de gestión de reservas, en donde un usuario puede registrarse y hacer una reserva en el restaurante. También, el usuario puede ver su perfil y editar sus datos, gestionar sus reservas o eliminarlas. Así mismo, el administrador puede gestionar las reservas y los usuarios registrados, para así, ver oportunidades de mejora y tomar decisiones en base a los datos.
 
 ### Desarrollo
 
@@ -19,8 +19,9 @@ La página web cuenta con un backend desarrollado en Java con el framework Sprin
 
 ### Diseño
 
-La web es responsive y cuenta con un diseño minimalista y moderno. El proyecto se encuentra en desarrollo y no está disponible para el público.
-
+La web es responsive, tiene modo oscuro y modo claro, cuenta con un diseño minimalista y moderno. 
+* Header: Cuenta con los botones de ingreso y registro, y el modo de color.
+* Home: Presenta el restaurante, su historia, su menú y sus bebidas por categorías.
 
 ---
 
