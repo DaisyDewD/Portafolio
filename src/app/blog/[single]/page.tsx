@@ -79,6 +79,7 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
                   <FaRegFolder className={"-mt-1 mr-2 inline-block"} />
                   {categories?.map((category: string, index: number) => (
                     <Link
+                      className="text-primary hover:text-dark hover:dark:text-theme-dark dark:text-theme-light"
                       key={category}
                       href={`/categories/${slugify(category)}`}
                     >
