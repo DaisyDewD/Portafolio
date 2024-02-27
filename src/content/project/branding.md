@@ -82,7 +82,7 @@ style={{ color: "#549CA5"}}>Imagen de proyecto del Colectivo de- formadores pres
         style={{ width: '100%', marginTop: '20px' }}
       />
       <figcaption
-      style={{ color: "#549CA5"}}>Diseño de marca para Excel Free Blog es un sitio web dedicado a la educación de Excel y otros.</figcaption>
+      style={{ color: "#549CA5"}}>Diseño de marca para Excel Free Project es un sitio web dedicado a la educación de Excel y otros.</figcaption>
     </figure>
   </div>
 </div>

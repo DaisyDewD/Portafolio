@@ -1,5 +1,4 @@
-import BlogCard from "@/components/BlogCard";
-import Share from "@/components/Share";
+import ProjectCard from "@/components/ProjectCard";
 import config from "@/config/config.json";
 import ImageFallback from "@/helpers/ImageFallback";
 import MDXContent from "@/helpers/MDXContent";
@@ -15,14 +14,14 @@ import {
   FaRegFolder
 } from "react-icons/fa/index.js";
 
-const { blog_folder } = config.settings;
+const { project_folder } = config.settings;
 
 // remove dynamicParams
 export const dynamicParams = false;
 
 // generate static params
 export const generateStaticParams: () => { single: string }[] = () => {
-  const posts: Post[] = getSinglePage(blog_folder);
+  const posts: Post[] = getSinglePage(project_folder);
 
   const paths = posts.map((post) => ({
     single: post.slug!,
@@ -32,7 +31,7 @@ export const generateStaticParams: () => { single: string }[] = () => {
 };
 
 const PostSingle = ({ params }: { params: { single: string } }) => {
-  const posts: Post[] = getSinglePage(blog_folder);
+  const posts: Post[] = getSinglePage(project_folder);
   const post = posts.filter((page) => page.slug === params.single)[0];
 
   const { frontmatter, content } = post;
@@ -124,7 +123,7 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
             <div className="row justify-center">
               {similarPosts.map((post) => (
                 <div key={post.slug} className="lg:col-4 mb-7">
-                  <BlogCard data={post} />
+                  <ProjectCard data={post} />
                 </div>
               ))}
             </div>

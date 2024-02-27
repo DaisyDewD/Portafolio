@@ -33,7 +33,7 @@ export const getListPage = (filePath: string) => {
   };
 };
 
-// get all single pages, ex: blog/post.md
+// get all single pages, ex: project/post.md
 export const getSinglePage = (folder: string) => {
   const folderPath = path.join(contentPath, folder);
 

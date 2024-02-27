@@ -4,7 +4,7 @@ const matter = require("gray-matter");
 
 const CONTENT_DEPTH = 2;
 const JSON_FOLDER = "./.json";
-const BLOG_FOLDER = "src/content/blog";
+const PROJECT_FOLDER = "src/content/project";
 
 // get data from markdown
 const getData = (folder, groupDepth) => {
@@ -56,7 +56,7 @@ try {
   // create json files
   fs.writeFileSync(
     `${JSON_FOLDER}/posts.json`,
-    JSON.stringify(getData(BLOG_FOLDER, 2)),
+    JSON.stringify(getData(PROJECT_FOLDER, 2)),
   );
 
   // merger json files for search

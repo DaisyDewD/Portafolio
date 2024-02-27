@@ -6,9 +6,9 @@ import SeoMeta from "@/partials/SeoMeta";
 import Link from "next/link";
 
 const Categories = () => {
-  const { blog_folder } = config.settings;
-  const categories = getTaxonomy(blog_folder, "categories");
-  const allCategories = getAllTaxonomy(blog_folder, "categories");
+  const { project_folder } = config.settings;
+  const categories = getTaxonomy(project_folder, "categories");
+  const allCategories = getAllTaxonomy(project_folder, "categories");
 
   return (
     <>

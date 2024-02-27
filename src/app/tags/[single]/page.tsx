@@ -1,4 +1,4 @@
-import BlogCard from "@/components/BlogCard";
+import ProjectCard from "@/components/ProjectCard";
 import config from "@/config/config.json";
 import { getSinglePage } from "@/lib/contentParser";
 import { getTaxonomy } from "@/lib/taxonomyParser";
@@ -8,7 +8,7 @@ import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
 import { Post } from "@/types";
 
-const { blog_folder } = config.settings;
+const { project_folder } = config.settings;
 type StaticParams = () => { single: string }[];
 
 // remove dynamicParams
@@ -16,7 +16,7 @@ export const dynamicParams = false;
 
 // generate static params
 export const generateStaticParams: StaticParams = () => {
-  const tags = getTaxonomy(blog_folder, "tags");
+  const tags = getTaxonomy(project_folder, "tags");
 
   const paths = tags.map((tag) => ({
     single: tag,
@@ -26,7 +26,7 @@ export const generateStaticParams: StaticParams = () => {
 };
 
 const TagSingle = ({ params }: { params: { single: string } }) => {
-  const posts: Post[] = getSinglePage(blog_folder);
+  const posts: Post[] = getSinglePage(project_folder);
   const filterByTags = taxonomyFilter(posts, "tags", params.single);
 
   return (
@@ -38,7 +38,7 @@ const TagSingle = ({ params }: { params: { single: string } }) => {
           <div className="row">
             {filterByTags.map((post: Post, index: number) => (
               <div className="mb-14 md:col-6 lg:col-4" key={index}>
-                <BlogCard data={post} />
+                <ProjectCard data={post} />
               </div>
             ))}
           </div>

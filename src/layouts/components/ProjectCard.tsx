@@ -6,13 +6,13 @@ import { Post } from "@/types";
 import Link from "next/link";
 import { FaRegFolder, FaRegUserCircle } from "react-icons/fa/index.js";
 
-const BlogCard = ({ data }: { data: Post }) => {
-  const { summary_length, blog_folder } = config.settings;
+const ProjectCard = ({ data }: { data: Post }) => {
+  const { summary_length, project_folder } = config.settings;
   const { title, image, categories, date } = data.frontmatter;
   return (
     <div className="bg-body dark:bg-darkmode-body">
       {image && (
-        <Link href={`/${blog_folder}/${data.slug}`}>
+        <Link href={`/${project_folder}/${data.slug}`}>
           <ImageFallback
             className="mb-6 w-full rounded cursor-pointer"
             src={image}
@@ -23,7 +23,7 @@ const BlogCard = ({ data }: { data: Post }) => {
       </Link>
       )}
       <h4 className="mb-3">
-        <Link href={`/${blog_folder}/${data.slug}`}>{title}</Link>
+        <Link href={`/${project_folder}/${data.slug}`}>{title}</Link>
       </h4>
       <ul className="mb-4">
         <li className="mr-4 inline-block">
@@ -42,7 +42,7 @@ const BlogCard = ({ data }: { data: Post }) => {
       </p>
       <Link
         className="btn btn-outline-primary btn-sm"
-        href={`/${blog_folder}/${data.slug}`}
+        href={`/${project_folder}/${data.slug}`}
       >
         ver más
       </Link>
@@ -50,4 +50,4 @@ const BlogCard = ({ data }: { data: Post }) => {
   );
 };
 
-export default BlogCard;
+export default ProjectCard;

@@ -1,4 +1,4 @@
-import BlogCard from "@/components/BlogCard";
+import ProjectCard from "@/components/ProjectCard";
 import Pagination from "@/components/Pagination";
 import config from "@/config/config.json";
 import { getListPage, getSinglePage } from "@/lib/contentParser";
@@ -9,14 +9,14 @@ import PostSidebar from "@/partials/PostSidebar";
 import SeoMeta from "@/partials/SeoMeta";
 import { Post } from "@/types";
 
-const { blog_folder, pagination } = config.settings;
+const { project_folder, pagination } = config.settings;
 
 // remove dynamicParams
 export const dynamicParams = false;
 
 // generate static params
 export const generateStaticParams = () => {
-  const allPost: Post[] = getSinglePage(blog_folder);
+  const allPost: Post[] = getSinglePage(project_folder);
   const allSlug: string[] = allPost.map((item) => item.slug!);
   const totalPages = Math.ceil(allSlug.length / pagination);
   let paths: { page: string }[] = [];
@@ -42,12 +42,12 @@ function spreadPages(num: number): number[] {
 
 // for all regular pages
 const Posts = ({ params }: { params: { page: number } }) => {
-  const postIndex: Post = getListPage(`${blog_folder}/_index.md`);
+  const postIndex: Post = getListPage(`${project_folder}/_index.md`);
   const { title, meta_title, description, image } = postIndex.frontmatter;
-  const posts: Post[] = getSinglePage(blog_folder);
-  const allCategories = getAllTaxonomy(blog_folder, "categories");
-  const categories = getTaxonomy(blog_folder, "categories");
-  const tags = getTaxonomy(blog_folder, "tags");
+  const posts: Post[] = getSinglePage(project_folder);
+  const allCategories = getAllTaxonomy(project_folder, "categories");
+  const categories = getTaxonomy(project_folder, "categories");
+  const tags = getTaxonomy(project_folder, "tags");
   const sortedPosts = sortByDate(posts);
   const totalPages = Math.ceil(posts.length / pagination);
   const currentPage =
@@ -72,12 +72,12 @@ const Posts = ({ params }: { params: { page: number } }) => {
               <div className="row">
                 {currentPosts.map((post: any, index: number) => (
                   <div key={index} className="mb-14 md:col-6">
-                    <BlogCard data={post} />
+                    <ProjectCard data={post} />
                   </div>
                 ))}
               </div>
               <Pagination
-                section={blog_folder}
+                section={project_folder}
                 currentPage={currentPage}
                 totalPages={totalPages}
               />
