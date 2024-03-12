@@ -7,16 +7,16 @@ const similerItems = (
   slug: string,
 ): Post[] => {
   let categories: string[] = [];
-  let tags: string[] = [];
+  let skills: string[] = [];
 
   // set categories
   if (currentItem.frontmatter.categories.length > 0) {
     categories = currentItem.frontmatter.categories;
   }
 
-  // set tags
-  if (currentItem.frontmatter.tags.length > 0) {
-    tags = currentItem.frontmatter.tags;
+  // set skills
+  if (currentItem.frontmatter.skills.length > 0) {
+    skills = currentItem.frontmatter.skills;
   }
 
   // filter by categories
@@ -26,13 +26,13 @@ const similerItems = (
     ),
   );
 
-  // filter by tags
-  const filterByTags = allItems.filter((item: any) =>
-    tags.find((tag) => item.frontmatter.tags.includes(tag)),
+  // filter by skills
+  const filterByskills = allItems.filter((item: any) =>
+    skills.find((tag) => item.frontmatter.skills.includes(tag)),
   );
 
   // merged after filter
-  const mergedItems = [...new Set([...filterByCategories, ...filterByTags])];
+  const mergedItems = [...new Set([...filterByCategories, ...filterByskills])];
 
   // filter by slug
   const filterBySlug = mergedItems.filter((product) => product.slug !== slug);

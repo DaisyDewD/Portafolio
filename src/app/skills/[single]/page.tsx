@@ -16,18 +16,18 @@ export const dynamicParams = false;
 
 // generate static params
 export const generateStaticParams: StaticParams = () => {
-  const tags = getTaxonomy(project_folder, "tags");
+  const skills = getTaxonomy(project_folder, "skills");
 
-  const paths = tags.map((tag) => ({
+  const paths = skills.map((tag) => ({
     single: tag,
   }));
 
   return paths;
 };
 
-const TagSingle = ({ params }: { params: { single: string } }) => {
+const skillsingle = ({ params }: { params: { single: string } }) => {
   const posts: Post[] = getSinglePage(project_folder);
-  const filterByTags = taxonomyFilter(posts, "tags", params.single);
+  const filterByskills = taxonomyFilter(posts, "skills", params.single);
 
   return (
     <>
@@ -36,7 +36,7 @@ const TagSingle = ({ params }: { params: { single: string } }) => {
       <div className="section-sm pb-0">
         <div className="container">
           <div className="row">
-            {filterByTags.map((post: Post, index: number) => (
+            {filterByskills.map((post: Post, index: number) => (
               <div className="mb-14 md:col-6 lg:col-4" key={index}>
                 <ProjectCard data={post} />
               </div>
@@ -48,4 +48,4 @@ const TagSingle = ({ params }: { params: { single: string } }) => {
   );
 };
 
-export default TagSingle;
+export default skillsingle;

@@ -7,6 +7,7 @@ import Header from "@/partials/Header";
 import Providers from "@/partials/Providers";
 import "@/styles/main.scss";
 import { Analytics } from '@vercel/analytics/react';
+import { LanguageProvider } from "@/components/LanguageContext";
 
 export default function RootLayout({
   children,
@@ -18,7 +19,8 @@ export default function RootLayout({
   const sf = theme.fonts.font_family.secondary;
 
   return (
-    <html suppressHydrationWarning={true} lang="en">
+    < LanguageProvider >
+    <html suppressHydrationWarning={true} lang="es">
       <head>
         {/* responsive meta */}
         <meta
@@ -67,5 +69,6 @@ export default function RootLayout({
         </Providers>
       </body>
     </html>
+    </LanguageProvider>
   );
 }

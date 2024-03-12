@@ -5,7 +5,7 @@ description: "Retoque digital de pieles, texturas, efectos especiales y composic
 date: 2018-01-04T05:00:00Z
 image: "/images/retouching.png"
 categories: ["Design", "Retouching"]
-tags: ["Photoshop"]
+skills: ["Photoshop"]
 draft: false
 ---
 
