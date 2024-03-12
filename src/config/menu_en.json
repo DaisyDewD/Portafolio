@@ -1,37 +1,33 @@
 {
   "main": [
     {
-      "name": "Portafolio",
+      "name": "Portfolio",
       "url": "/",
       "hasChildren": true,
       "children": [
         {
-          "name": "Proyectos",
+          "name": "Projects",
           "url": "/"
         },
         {
-          "name": "Habilidades",
+          "name": "Skills",
           "url": "/skills"
         }
       ]
     },
     {
-      "name": "Sobre mi",
+      "name": "About me",
       "url": "/about"
     },
     {
-      "name": "Contacto",
+      "name": "Contact",
       "url": "/contact"
     }
   ],
   "footer": [
     {
-      "name": "Contacto",
+      "name": "Contact",
       "url": "/contact"
-    },
-    {
-      "name": "Descargar CV",
-      "url": "/docs/CV-DeisyGarzon2024.pdf"
     },
     {
       "name": "Download CV",

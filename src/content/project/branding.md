@@ -5,7 +5,7 @@ description: "Branding y desarrollo de marca"
 date: 2020-01-04T05:00:00Z
 image: "/images/branding.png"
 categories: ["Design", "Branding"]
-tags: ["Premiere", "After Effects", "Illustrator", "Photoshop"]
+skills: ["Premiere", "After Effects", "Illustrator", "Photoshop"]
 draft: false
 ---
 

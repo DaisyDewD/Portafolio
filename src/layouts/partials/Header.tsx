@@ -1,13 +1,15 @@
 "use client";
 
+import { useLanguage } from "@/components/LanguageContext";
 import Logo from "@/components/Logo";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import config from "@/config/config.json";
-import menu from "@/config/menu.json";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
 import { IoSearch } from "react-icons/io5/index.js";
+
+
 
 //  child navigation link interface
 export interface IChildNavigationLink {
@@ -23,8 +25,27 @@ export interface INavigationLink {
   children?: IChildNavigationLink[];
 }
 
+const HeaderWithLanguageToggle: React.FC = () => {
+    const { language, toggleLanguage } = useLanguage();
+    return (
+      <div>
+          <span
+            style={{ cursor: 'pointer' }}
+            onClick={toggleLanguage}
+          >
+            
+            {language === 'es' ? '🇪🇸 Español' : '🇬🇧 English'}
+          </span>
+        </div>
+    );
+  
+  };
 const Header = () => {
+  
   // distructuring the main menu from menu object
+const { language } = useLanguage();
+  
+const menu = language === 'es' ? require('@/config/menu.json') : require('@/config/menu_en.json');
   const { main }: { main: INavigationLink[] } = menu;
   const { navigation_button, navigation_button2, settings } = config;
   // get current path
@@ -44,6 +65,9 @@ const Header = () => {
         <div className="order-0">
           <Logo />
         </div>
+        
+
+        <HeaderWithLanguageToggle />
         {/* navbar toggler */}
         <input id="nav-toggle" type="checkbox" className="hidden" />
         <label

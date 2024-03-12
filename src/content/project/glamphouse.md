@@ -5,7 +5,7 @@ description: "this is meta description"
 date: 2022-10-03T05:00:00Z
 image: "/images/glamphouse.png"
 categories: ["App", "Data", "Infraestructura", "Site", "Web Design"]
-tags: ["React", "Tailwind", "MySQL", "Java", "Scrum", "Node", "Docker", "AWS", "Jest", SASS, CssModule, SpringBoot, StyledComponents"]
+skills: ["React", "Tailwind", "MySQL", "Java", "Scrum", "Node", "Docker", "AWS", "Jest", SASS, CssModule, SpringBoot, StyledComponents"]
 draft: false
 ---
 Glamp House es una página web para hacer reservas en diferentes tipos de alojamientos, como cabañas, casas, departamentos, etc. Cuenta con un sistema de gestión de reservas, en donde el usuario puede registrarse y hacer una reserva en el alojamiento que desee.

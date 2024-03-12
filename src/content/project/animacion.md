@@ -5,7 +5,7 @@ description: "Diseño y maquetación de emailing"
 date: 2021-07-04T05:00:00Z
 image: "/images/animation.png"
 categories: ["Design", "Animacion"]
-tags: ["Premiere", "After Effects", "Illustrator", "Photoshop"]
+skills: ["Premiere", "After Effects", "Illustrator", "Photoshop"]
 draft: false
 ---
 
