@@ -42,7 +42,7 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
     image,
     categories,
     date,
-    tags,
+    skills,
   } = frontmatter;
   const similarPosts = similerItems(post, posts, post.slug!);
 
@@ -101,11 +101,11 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
                 <div className="mb-10 flex items-center lg:col-5 lg:mb-0">
                   <h5 className="mr-3">Habilidades:</h5>
                   <ul>
-                    {tags?.map((tag: string) => (
+                    {skills?.map((tag: string) => (
                       <li key={tag} className="inline-block">
                         <Link
                           className="m-1 block rounded bg-theme-light px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                          href={`/tags/${slugify(tag)}`}
+                          href={`/skills/${slugify(tag)}`}
                         >
                           {humanize(tag)}
                         </Link>

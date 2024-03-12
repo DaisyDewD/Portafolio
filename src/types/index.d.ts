@@ -19,7 +19,7 @@ export type Post = {
     image?: string;
     categories: string[];
     author: string;
-    tags: string[];
+    skills: string[];
     date?: string;
     draft?: boolean;
   };
