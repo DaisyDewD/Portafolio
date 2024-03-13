@@ -40,14 +40,14 @@ const PostSidebar = ({
         <h5 className="mb-6">Habilidades</h5>
         <div className="rounded bg-theme-light p-6 dark:bg-darkmode-theme-light">
           <ul>
-            {skills.map((tag: string) => {
+            {skills.map((skill: string) => {
               return (
-                <li className="inline-block" key={tag}>
+                <li className="inline-block" key={skill}>
                   <Link
                     className="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                    href={`/skills/${tag}`}
+                    href={`/skills/${skill}`}
                   >
-                    {humanize(tag)}
+                    {humanize(skill)}
                   </Link>
                 </li>
               );

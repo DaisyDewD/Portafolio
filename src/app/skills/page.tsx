@@ -12,22 +12,22 @@ const skills = () => {
 
   return (
     <>
-      <SeoMeta title={"skills"} />
-      <PageHeader title={"skills"} />
+      <SeoMeta title={"Skills"} />
+      <PageHeader title={"Skills"} />
       <section className="section">
         <div className="container text-center">
           <ul>
-            {skills.map((tag: string) => {
+            {skills.map((skill: string) => {
               const count: number = allskills.filter(
-                (c: string) => c === tag,
+                (c: string) => c === skill,
               ).length;
               return (
-                <li className="m-3 inline-block" key={tag}>
+                <li className="m-3 inline-block" key={skill}>
                   <Link
-                    href={`/skills/${tag}`}
+                    href={`/skills/${skill}`}
                     className="block rounded bg-theme-light px-4 py-2 text-xl text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark"
                   >
-                    {humanize(tag)}
+                    {humanize(skill)}
                     <span className="ml-2 rounded bg-body px-2 dark:bg-darkmode-body">
                       {count}
                     </span>

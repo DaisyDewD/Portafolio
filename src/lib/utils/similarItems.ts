@@ -27,12 +27,12 @@ const similerItems = (
   );
 
   // filter by skills
-  const filterByskills = allItems.filter((item: any) =>
-    skills.find((tag) => item.frontmatter.skills.includes(tag)),
+  const filterBySkills = allItems.filter((item: any) =>
+    skills.find((skill) => item.frontmatter.skills.includes(skill)),
   );
 
   // merged after filter
-  const mergedItems = [...new Set([...filterByCategories, ...filterByskills])];
+  const mergedItems = [...new Set([...filterByCategories, ...filterBySkills])];
 
   // filter by slug
   const filterBySlug = mergedItems.filter((product) => product.slug !== slug);
