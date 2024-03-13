@@ -8,7 +8,7 @@ import Link from "next/link";
 const skills = () => {
   const { project_folder } = config.settings;
   const skills = getTaxonomy(project_folder, "skills");
-  const allskills = getAllTaxonomy(project_folder, "skills");
+  const allSkills = getAllTaxonomy(project_folder, "skills");
 
   return (
     <>
@@ -18,7 +18,7 @@ const skills = () => {
         <div className="container text-center">
           <ul>
             {skills.map((skill: string) => {
-              const count: number = allskills.filter(
+              const count: number = allSkills.filter(
                 (c: string) => c === skill,
               ).length;
               return (
