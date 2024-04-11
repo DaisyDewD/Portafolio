@@ -39,7 +39,7 @@
     "react-lite-youtube-embed": "^2.4.0",
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^3.0.1",
-    "sharp": "^0.33.1",
+    "sharp": "0.33.1",
     "swiper": "^11.0.5"
   },
   "devDependencies": {
