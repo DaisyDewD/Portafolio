@@ -5,7 +5,7 @@ description: "Restaurante de comida francesa"
 date: 2023-10-02T05:00:00Z
 image: "/images/enchante.png"
 categories: ["Data", "Infraestructura", "Site", "Web Design"]
-tags: ["nextjs", "tailwind", "Spring-Boot", "MySQL", "Java", "Scrum","Node", "Docker", "AWS", "Jest"]
+skills: ["nextjs", "tailwind", "Spring-Boot", "MySQL", "Java", "Scrum","Node", "Docker", "AWS", "Jest"]
 draft: false
 ---
 Enchanté es una página web de un restaurante francés, que ofrece platos exquisitos, postres y bebidas, con un estilo sofisticado y elegante.

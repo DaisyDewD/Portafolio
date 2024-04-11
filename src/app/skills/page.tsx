@@ -5,26 +5,26 @@ import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
 import Link from "next/link";
 
-const tags = () => {
+const skills = () => {
   const { project_folder } = config.settings;
-  const tags = getTaxonomy(project_folder, "tags");
-  const alltags = getAllTaxonomy(project_folder, "tags");
+  const skills = getTaxonomy(project_folder, "skills");
+  const allskills = getAllTaxonomy(project_folder, "skills");
 
   return (
     <>
-      <SeoMeta title={"Tags"} />
-      <PageHeader title={"Tags"} />
+      <SeoMeta title={"Skills"} />
+      <PageHeader title={"Skills"} />
       <section className="section">
         <div className="container text-center">
           <ul>
-            {tags.map((tag: string) => {
-              const count: number = alltags.filter(
+            {skills.map((tag: string) => {
+              const count: number = allskills.filter(
                 (c: string) => c === tag,
               ).length;
               return (
                 <li className="m-3 inline-block" key={tag}>
                   <Link
-                    href={`/tags/${tag}`}
+                    href={`/skills/${tag}`}
                     className="block rounded bg-theme-light px-4 py-2 text-xl text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark"
                   >
                     {humanize(tag)}
@@ -42,4 +42,4 @@ const tags = () => {
   );
 };
 
-export default tags;
+export default skills;

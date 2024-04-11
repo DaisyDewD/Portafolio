@@ -5,7 +5,7 @@ description: "Diseño y maquetación de emailing"
 date: 2021-05-04T05:00:00Z
 image: "/images/emailing.png"
 categories: ["Web Design"]
-tags: ["HTML", "CSS"]
+skills: ["HTML", "CSS"]
 draft: false
 ---
 

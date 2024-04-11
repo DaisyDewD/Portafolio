@@ -2,11 +2,11 @@ import { humanize } from "@/lib/utils/textConverter";
 import Link from "next/link";
 
 const PostSidebar = ({
-  tags,
+  skills,
   categories,
   allCategories,
 }: {
-  tags: string[];
+  skills: string[];
   categories: string[];
   allCategories: string[];
 }) => {
@@ -35,17 +35,17 @@ const PostSidebar = ({
           </ul>
         </div>
       </div>
-      {/* <!-- tags --> */}
+      {/* <!-- skills --> */}
       <div className="mb-8">
         <h5 className="mb-6">Habilidades</h5>
         <div className="rounded bg-theme-light p-6 dark:bg-darkmode-theme-light">
           <ul>
-            {tags.map((tag: string) => {
+            {skills.map((tag: string) => {
               return (
                 <li className="inline-block" key={tag}>
                   <Link
                     className="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                    href={`/tags/${tag}`}
+                    href={`/skills/${tag}`}
                   >
                     {humanize(tag)}
                   </Link>

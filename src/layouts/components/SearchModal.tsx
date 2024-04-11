@@ -27,13 +27,13 @@ const SearchModal = () => {
           ?.join(" ")
           .toLowerCase()
           .match(regex);
-        const tags = item.frontmatter.tags
+        const skills = item.frontmatter.skills
           ?.join(" ")
           .toLowerCase()
           .match(regex);
         const content = item.content.toLowerCase().match(regex);
 
-        if (title || content || description || categories || tags) {
+        if (title || content || description || categories || skills) {
           return item;
         }
       });

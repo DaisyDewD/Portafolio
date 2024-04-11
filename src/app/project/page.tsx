@@ -17,7 +17,7 @@ const Posts = () => {
   const posts: Post[] = getSinglePage(project_folder);
   const allCategories = getAllTaxonomy(project_folder, "categories");
   const categories = getTaxonomy(project_folder, "categories");
-  const tags = getTaxonomy(project_folder, "tags");
+  const skills = getTaxonomy(project_folder, "skills");
   const sortedPosts = sortByDate(posts);
   const totalPages = Math.ceil(posts.length / pagination);
   const currentPosts = sortedPosts.slice(0, pagination);
@@ -51,7 +51,7 @@ const Posts = () => {
 
             <PostSidebar
               categories={categories}
-              tags={tags}
+              skills={skills}
               allCategories={allCategories}
             />
           </div>
