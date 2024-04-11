@@ -1,7 +1,7 @@
 ---
 title: "Animación"
-meta_title: "emailing"
-description: "Diseño y maquetación de emailing"
+meta_title: "Animación"
+description: "Animación de personajes, graficos en movimiento y videos."
 date: 2021-07-04T05:00:00Z
 image: "/images/animation.png"
 categories: ["Design", "Animacion"]

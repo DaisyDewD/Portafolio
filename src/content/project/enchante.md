@@ -1,10 +1,10 @@
 ---
 title: "Enchanté"
-meta_title: "Desarrollo de una página web para un restaurante"
+meta_title: "Enchanté - Reservas"
 description: "Restaurante de comida francesa"
 date: 2023-10-02T05:00:00Z
 image: "/images/enchante.png"
-categories: ["Application", "Data", "Data", "Infraestructura", "Site", "Web Design"]
+categories: ["Data", "Infraestructura", "Site", "Web Design"]
 tags: ["nextjs", "tailwind", "Spring-Boot", "MySQL", "Java", "Scrum","Node", "Docker", "AWS", "Jest"]
 draft: false
 ---

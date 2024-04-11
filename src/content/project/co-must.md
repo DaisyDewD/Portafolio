@@ -1,7 +1,7 @@
 ---
 title: "CO-MUST"
-meta_title: "CO-MUST IV"
-description: "E"
+meta_title: "Landing Page CO-MUST"
+description: "Esta es la landing page de la propuesta de la cuarta versión del evento CO-MUST."
 date: 2024-03-25T05:00:00Z
 image: "/images/evento.png"
 categories: ["Landing-page", "Web Design"]

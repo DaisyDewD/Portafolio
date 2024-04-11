@@ -1,6 +1,6 @@
 ---
 title: "Contacto"
-meta_title: ""
+meta_title: "Contacto"
 description: "Aquí puedes contactar conmigo"    
 draft: false
 ---

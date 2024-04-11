@@ -1,6 +1,6 @@
 ---
 title: "¡Hola, Soy Daisy Garzón León!"
-meta_title: "About"
+meta_title: "Sobre mi"
 description: "Sobre mi trayectoria profesional"
 image: "/images/avatar.png"
 draft: false
