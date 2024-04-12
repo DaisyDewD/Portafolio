@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Portfolio",
-    "base_url": "https://portfolio-daisydew.vercel.app",
+    "base_url": "https://www.daisydew.works",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
@@ -24,7 +24,7 @@
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Designed And Developed by DaisyDew"
+    "copyright": "© Todos los derechos reservados - 2024 - DaisyDew"
   },
 
   "navigation_button": {
@@ -41,7 +41,7 @@
 
   "metadata": {
     "meta_author": "DaisyDew",
-    "meta_image": "/images/logo.png",
+    "meta_image": "/images/favicon.png",
     "meta_description": "Portafolio de DaisyDew"
   }, 
 
