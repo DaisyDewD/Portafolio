@@ -1,5 +1,5 @@
 ---
 title: "Proyectos"
-meta_title: "proyectos"
-description: "Proyectos realizados" 
+meta_title: "Portafolio de Deisy Garzón León"
+description: "Portafolio de diseño gráfico, web y desarrollo." 
 ---

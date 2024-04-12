@@ -8,8 +8,11 @@ categories: ["Data", "Infraestructura", "Site", "Web Design"]
 skills: ["React", "Tailwind", "MySQL", "Java", "Scrum", "Node", "Docker", "AWS", "Jest", "SASS", "CssModule", "SpringBoot", "StyledComponents"]
 draft: false
 ---
+
 Glamp House es una página web para hacer reservas en diferentes tipos de alojamientos, como cabañas, casas, departamentos, etc. Cuenta con un sistema de gestión de reservas, en donde el usuario puede registrarse y hacer una reserva en el alojamiento que desee.
----
+
+
+
 
 <div style={{ display: 'flex', marginBottom: '20px' }}>
   <div style={{ flex: 1, marginRight: '20px' }}>
