@@ -22,10 +22,10 @@ const skills = () => {
                 (c: string) => c === tag,
               ).length;
               return (
-                <li className="m-3 inline-block" key={tag}>
+                <li className="m-3 inline-block dark:text-body" key={tag}>
                   <Link
                     href={`/skills/${tag}`}
-                    className="block rounded bg-theme-light px-4 py-2 text-xl text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark"
+                    className="block rounded bg-theme-light px-4 py-2 text-xl text-dark dark:bg-darkmode-theme-light dark:text-body"
                   >
                     {humanize(tag)}
                     <span className="ml-2 rounded bg-body px-2 dark:bg-darkmode-body">
