@@ -21,13 +21,14 @@ const Contact = async () => {
       />
       <PageHeader title={title} />
       <div className="flex items-center justify-center mt-10">
+        
         <Share className="social-icons" />
       </div>
       <section className="section-sm">
         <div className="container">
           <div className="row">
             <div className="mx-auto md:col-10 lg:col-6 text-dark">
-              <form action="https://formspree.io/f/xrgnqrkv" method="POST">
+              <form action={contact_form_action} method="POST">
                 <div className="mb-6">
                   <label htmlFor="name" className="form-label">
                     Nombre completo <span className="text-red-500">*</span>
