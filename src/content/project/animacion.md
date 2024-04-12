@@ -1,15 +1,14 @@
 ---
 title: "Animación"
 meta_title: "Animación"
-description: "Animación de personajes, graficos en movimiento y videos."
+description: "Animación de personajes, gráficos en movimiento y videos."
 date: 2021-07-04T05:00:00Z
 image: "/images/animation.png"
 categories: ["Design", "Animacion"]
 skills: ["Premiere", "After Effects", "Illustrator", "Photoshop"]
 draft: false
 ---
-
-Desde que inicié mi carrera de diseño, he coincidido con el diseño web. Inicié con Web Plus, luego con Wordpress y finalmente con HTML y CSS. Esto, antes de culminar mi carrera de desarrollo web.
+El enfoque de mi carrera de diseño gráfico ha sido la animación, he trabajado en proyectos de animación de personajes, gráficos en movimiento y videos. A continuación, se presentan algunos ejemplos de mi trabajo en animación.
 
 #### Gifs
 

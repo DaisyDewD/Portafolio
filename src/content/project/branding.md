@@ -8,7 +8,6 @@ categories: ["Design", "Branding"]
 skills: ["Premiere", "After Effects", "Illustrator", "Photoshop"]
 draft: false
 ---
-
 En mi trayectoria profesional, he tenido la oportunidad de trabajar en proyectos de branding y desarrollo de marca. A continuación, algunos ejemplos de mi trabajo:
 
 <div style={{ display: 'flex', marginBottom: '2px' }}>

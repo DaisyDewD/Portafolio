@@ -8,7 +8,6 @@ categories: ["Design", "Retouching"]
 skills: ["Photoshop"]
 draft: false
 ---
-
 Profundicé mis conocimientos en retoque estudiando Photoshop avanzado en Zona Cinco, Escuela de cine y fotografía. A continuación, algunos ejemplos de mi trabajo:
 
 

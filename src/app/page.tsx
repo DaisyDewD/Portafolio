@@ -1,5 +1,4 @@
 import ProjectCard from "@/components/ProjectCard";
-import Pagination from "@/components/Pagination";
 import config from "@/config/config.json";
 import { getListPage, getSinglePage } from "@/lib/contentParser";
 import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser";
@@ -8,9 +7,9 @@ import PageHeader from "@/partials/PageHeader";
 import PostSidebar from "@/partials/PostSidebar";
 import SeoMeta from "@/partials/SeoMeta";
 import { Post } from "@/types";
-const { project_folder, pagination } = config.settings;
 
-// for all regular pages
+const { project_folder } = config.settings;
+
 const Posts = () => {
   const postIndex: Post = getListPage(`${project_folder}/_index.md`);
   const { title, meta_title, description, image } = postIndex.frontmatter;
@@ -19,8 +18,6 @@ const Posts = () => {
   const categories = getTaxonomy(project_folder, "categories");
   const skills = getTaxonomy(project_folder, "skills");
   const sortedPosts = sortByDate(posts);
-  const totalPages = Math.ceil(posts.length / pagination);
-  const currentPosts = sortedPosts.slice(0, pagination);
 
   return (
     <>
@@ -36,17 +33,12 @@ const Posts = () => {
           <div className="row gx-5">
             <div className="lg:col-8">
               <div className="row">
-                {currentPosts.map((post: any, index: number) => (
-                  <div key={index} className="mb-14 md:col-6">
+                {sortedPosts.map((post: any, index: number) => (
+                  <div key={index} className="mb-10 md:col-6">
                     <ProjectCard data={post} />
                   </div>
                 ))}
               </div>
-              <Pagination
-                section={project_folder}
-                currentPage={1}
-                totalPages={totalPages}
-              />
             </div>
 
             <PostSidebar

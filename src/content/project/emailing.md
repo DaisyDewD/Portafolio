@@ -8,7 +8,6 @@ categories: ["Web Design"]
 skills: ["HTML", "CSS"]
 draft: false
 ---
-
 Desde que inicié mi carrera de diseño, he coincidido con el diseño web. Inicié con Web Plus, luego con Wordpress y finalmente con HTML y CSS. Esto, antes de culminar mi carrera de desarrollo web.
 
 

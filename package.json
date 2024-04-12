@@ -37,6 +37,7 @@
     "react-gtm-module": "^2.0.11",
     "react-icons": "^4.12.0",
     "react-lite-youtube-embed": "^2.4.0",
+    "react-router-dom": "^6.22.3",
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^3.0.1",
     "sharp": "0.33.1",

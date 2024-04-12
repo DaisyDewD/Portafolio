@@ -1,51 +1,42 @@
 import config from "@/config/config.json";
 import ImageFallback from "@/helpers/ImageFallback";
-import dateFormat from "@/lib/utils/dateFormat";
-import { humanize, plainify, slugify } from "@/lib/utils/textConverter";
+import { plainify } from "@/lib/utils/textConverter";
 import { Post } from "@/types";
-import Link from "next/link";
-import { FaRegFolder, FaRegUserCircle } from "react-icons/fa/index.js";
+
+import dynamic from "next/dynamic";
+
+const NoSSRLink = dynamic(() => import("next/link"), { ssr: false });
 
 const ProjectCard = ({ data }: { data: Post }) => {
   const { summary_length, project_folder } = config.settings;
-  const { title, image, categories, date } = data.frontmatter;
+  const { title, image } = data.frontmatter;
+
   return (
-    <div className="bg-body dark:bg-darkmode-body">
-      {image && (
-        <Link href={`/${project_folder}/${data.slug}`}>
-          <ImageFallback
-            className="mb-6 w-full rounded cursor-pointer"
-            src={image}
-            alt={title}
-            width={445}
-            height={230}
-          />
-      </Link>
-      )}
-      <h4 className="mb-3">
-        <Link href={`/${project_folder}/${data.slug}`}>{title}</Link>
-      </h4>
-      <ul className="mb-4">
-        <li className="mr-4 inline-block">
-          <FaRegFolder className={"-mt-1 mr-2 inline-block text-dark"} />
-          {categories?.map((category: string, index: number) => (
-            <Link className="text-primary hover:text-dark hover:dark:text-theme-dark dark:text-theme-light" key={index} href={`/categories/${slugify(category)}`}>
-              {humanize(category)}
-              {index !== categories.length - 1 && ", "}
-            </Link>
-          ))}
-        </li>
-        {date && <li className="inline-block">{dateFormat(date)}</li>}
-      </ul>
-      <p className="mb-6">
-        {plainify(data.content!.slice(0, Number(summary_length)))}
-      </p>
-      <Link
-        className="btn btn-outline-primary btn-sm"
-        href={`/${project_folder}/${data.slug}`}
-      >
-        ver más
-      </Link>
+    <div className="relative bg-body dark:bg-darkmode-body overflow-hidden  shadow-lg">
+      <div>
+        <NoSSRLink href={`/${project_folder}/${data.slug}`} passHref>
+          <div className="group transition-transform duration-300 transform hover:scale-105 block">
+            <ImageFallback
+              className="w-full"
+              src={image}
+              alt={title}
+              width={445}
+              height={230}
+            />
+            <div className="absolute inset-0 bg-border bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center">
+              <div className="text-body text-center px-4">
+                
+               <p className="text-body-400 mb-2">
+                {plainify(data.content!.slice(0, Number(summary_length)))}<i className="small-font">...[ver más]</i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </NoSSRLink>
+      </div>
+      <div className="absolute bottom-0 left-0 right-0 bg-theme-light dark:bg-primary bg-opacity-75 dark:bg-opacity-80 py-2 px-4">
+        <h4 className="text-xl font-semibold dark:text-darkmode-border text-primary">{title}</h4>
+      </div>
     </div>
   );
 };
