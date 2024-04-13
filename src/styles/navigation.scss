@@ -44,15 +44,15 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-dropdown-list {
-  @apply z-10 min-w-[180px] rounded bg-body p-4 shadow dark:bg-darkmode-body;
+  @apply z-10 min-w-[180px] rounded bg-theme-light p-4 shadow dark:bg-darkmode-primary;
 }
 
 .nav-dropdown-item {
-  @apply mb-2;
+  @apply mb-2 ;
 }
 
 .nav-dropdown-link {
-  @apply block py-1 font-semibold text-dark transition hover:text-primary dark:text-darkmode-text dark:hover:text-darkmode-primary;
+  @apply block py-1 font-semibold text-dark transition hover:text-primary dark:text-darkmode-light dark:hover:text-darkmode-border;
 }
 
 //theme-switcher

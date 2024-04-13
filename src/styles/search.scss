@@ -9,20 +9,22 @@
     }
   }
   &-wrapper {
-    @apply bg-white dark:bg-darkmode-body w-[660px] max-w-[96%] mt-24 rounded shadow-lg relative z-10;
+    @apply bg-body dark:bg-border w-[660px] max-w-[96%] mt-24 rounded shadow-lg relative z-10;
     &-header {
       @apply p-4 relative;
       &-input {
-        @apply border border-solid w-full focus:ring-0 focus:border-dark border-border rounded-[4px] h-12 pr-4 pl-10 transition duration-200 outline-none dark:bg-darkmode-theme-light dark:text-darkmode-text dark:border-darkmode-border dark:focus:border-darkmode-primary;
+        @apply border border-solid w-full focus:ring-0 focus:border-border  border-border rounded-[4px] h-12 pr-4 pl-10 transition duration-200 outline-none dark:bg-theme-light bg-theme-light dark:text-text text-border dark:border-body dark:focus:border-darkmode-primary;
       }
+
+
     }
     &-body {
-      @apply dark:bg-darkmode-theme-light dark:shadow-none max-h-[calc(100vh-350px)] overflow-y-auto bg-theme-light shadow-[inset_0_2px_18px_#ddd] p-4 rounded;
+      @apply dark:bg-darkmode-theme-light dark:shadow-none max-h-[calc(100vh-350px)] overflow-y-auto bg-body shadow-[inset_0_2px_18px_#ddd] p-4 rounded;
     }
     &-footer {
       @apply text-xs select-none leading-none md:flex items-center px-3.5 py-2 hidden;
       kbd {
-        @apply bg-theme-light dark:bg-darkmode-theme-light text-xs leading-none text-center mr-[3px] px-1 py-0.5 rounded-[3px];
+        @apply bg-theme-light dark:bg-theme-light text-xs leading-none text-center mr-[3px] px-1 py-0.5 rounded-[3px];
       }
       span:not(:last-child) {
         @apply mr-4;
@@ -43,7 +45,7 @@
       }
     }
     &-item {
-      @apply rounded border bg-white dark:bg-darkmode-body dark:border-darkmode-border flex items-start mb-1 p-4 scroll-my-[30px] border-solid border-border relative;
+      @apply rounded border bg-body dark:bg-border dark:border-darkmode-border flex items-start mb-1 p-4 scroll-my-[30px] border-solid border-border relative;
       mark {
         @apply bg-yellow-200 rounded-[2px];
       }
@@ -78,16 +80,16 @@
         @apply bg-dark dark:bg-dark;
         .search-result-item {
           &-title {
-            @apply text-white;
+            @apply text-body;
           }
           &-description {
-            @apply text-white/80;
+            @apply text-body/80;
           }
           &-content {
-            @apply text-white/90;
+            @apply text-body/90;
           }
           &-taxonomies {
-            @apply text-white/90;
+            @apply text-body/90;
           }
         }
       }

@@ -13,6 +13,7 @@ const ProjectCard = ({ data }: { data: Post }) => {
 
   return (
     <div className="relative bg-body dark:bg-darkmode-body overflow-hidden  shadow-lg">
+      
       <div>
         <NoSSRLink href={`/${project_folder}/${data.slug}`} passHref>
           <div className="group transition-transform duration-300 transform hover:scale-105 block">
@@ -34,9 +35,11 @@ const ProjectCard = ({ data }: { data: Post }) => {
           </div>
         </NoSSRLink>
       </div>
+      <NoSSRLink href={`/${project_folder}/${data.slug}`} passHref>
       <div className="absolute bottom-0 left-0 right-0 bg-theme-light dark:bg-primary bg-opacity-75 dark:bg-opacity-80 py-2 px-4">
         <h4 className="text-xl font-semibold dark:text-darkmode-border text-primary">{title}</h4>
       </div>
+      </NoSSRLink>
     </div>
   );
 };

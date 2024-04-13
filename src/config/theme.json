@@ -21,7 +21,7 @@
         "body": "#1F0802",
         "border": "#CEF09D",
         "theme_light": " #38184C",
-        "theme_dark": "##38184C"
+        "theme_dark": "#38184C"
       },
       "text_color": {
         "default": "#FFFFD5",

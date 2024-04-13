@@ -128,13 +128,13 @@ const SearchModal = () => {
   return (
     <div id="searchModal" className="search-modal">
       <div id="searchModalOverlay" className="search-modal-overlay" />
-      <div className="search-wrapper">
+      <div className="search-wrapper ">
         <div className="search-wrapper-header">
           <label
-            htmlFor="searchInput"
-            className="absolute left-7 top-[calc(50%-7px)]"
+            htmlFor="searchInput "
+            className="absolute left-7 top-[calc(50%-7px)] "
           >
-            <span className="sr-only">search icon</span>
+            <span className="sr-only ">search icon</span>
             {searchString ? (
               <svg
                 onClick={() => setSearchString("")}

@@ -35,7 +35,9 @@
   "navigation_button2": {
     "enable": true,
     "label": "Download CV",
-    "link": "/docs/CV-DeisyGarzon2024-en.pdf"
+    "link": "/docs/CV-DeisyGarzon2024-en.pdf",
+    "Download": "Descargar CV", 
+    "target": "_blank"
   },
 
 
