@@ -1,7 +1,8 @@
 import SeoMeta from "@/partials/SeoMeta";
 import Link from "next/link";
+import "@/styles/notfound.scss";
 
-const NotFound = async () => {
+const NotFound = () => {
   return (
     <>
       <SeoMeta title={"Page Not Found"} />
@@ -9,18 +10,15 @@ const NotFound = async () => {
         <div className="container">
           <div className="row justify-center">
             <div className="sm:col-10 md:col-8 lg:col-6">
-              <span className="text-[8rem] block font-bold text-dark dark:text-darkmode-dark">
-                404
-              </span>
-              <h1 className="h2 mb-4">Page not found</h1>
+              <img src="/images/404.png" alt="Page not found" className={`${['not-found-image']} mb-4`} />
+              <h1 className="h2 mb-4">Página no encontrada</h1>
               <div className="content">
                 <p>
-                  The page you are looking for might have been removed, had its
-                  name changed, or is temporarily unavailable.
+                <strong>¡Ups!</strong> Esta sección está bajo remodelación. Estoy creando algo épico. Mientras tanto, descubre otros proyectos en mi portafolio
                 </p>
               </div>
               <Link href="/" className="btn btn-primary mt-8">
-                Back to home
+                Proyectos
               </Link>
             </div>
           </div>

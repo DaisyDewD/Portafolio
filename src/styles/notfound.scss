@@ -1,0 +1,21 @@
+.not-found-image {
+    will-change: transform; /* Indica que la propiedad transform se modificará */
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave */
+  }
+  
+  .not-found-image:hover {
+   
+    transform-origin: top; 
+    animation: pendulum 1s ease-in-out infinite alternate;
+}
+  
+  @keyframes pendulum {
+    from {
+      transform: rotate(-5deg); /* Inicia la animación girando hacia la izquierda */
+    }
+    to {
+      transform: rotate(5deg); /* Termina la animación girando hacia la derecha */
+    }
+  }
+  
