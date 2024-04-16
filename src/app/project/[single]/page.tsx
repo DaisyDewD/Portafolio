@@ -101,13 +101,13 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
                 <div className="mb-10 flex items-center lg:col-5 lg:mb-0">
                   <h5 className="mr-3">Habilidades:</h5>
                   <ul>
-                    {skills?.map((tag: string) => (
-                      <li key={tag} className="inline-block">
+                    {skills?.map((skill: string) => (
+                      <li key={skill} className="inline-block">
                         <Link
                           className="m-1 block rounded bg-theme-light px-3 py-1 hover:bg-primary hover:text-body dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                          href={`/skills/${slugify(tag)}`}
+                          href={`/skills/${slugify(skill)}`}
                         >
-                          {humanize(tag)}
+                          {humanize(skill)}
                         </Link>
                       </li>
                     ))}

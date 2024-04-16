@@ -32,8 +32,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border-t border-border py-7 dark:border-darkmode-border">
-        <div className="container text-center text-body dark:text-darkmode-light text-darkmode">
+      <div className="border-t border-body py-7 dark:border-darkmode-border">
+        <div className="container text-center text-theme-light dark:text-darkmode-light text-darkmode">
           <p dangerouslySetInnerHTML={markdownify(copyright)} />
         </div>
       </div>

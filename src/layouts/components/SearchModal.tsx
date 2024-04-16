@@ -153,7 +153,7 @@ const SearchModal = () => {
                 viewBox="0 0 512 512"
                 height="18"
                 width="18"
-                className="-mt-0.5"
+                className="-mt-0.5 "
               >
                 <path
                   fill="currentcolor"
@@ -165,7 +165,7 @@ const SearchModal = () => {
           <input
             id="searchInput"
             placeholder="Buscar..."
-            className="search-wrapper-header-input"
+            className="search-wrapper-header-input text-border"
             type="input"
             name="search"
             value={searchString}
